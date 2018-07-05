@@ -1,0 +1,6 @@
+framework module Pods_Slick {
+  umbrella header "Pods-Slick-umbrella.h"
+
+  export *
+  module * { export * }
+}

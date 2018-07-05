@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DD8A92C89F620B01A3BA275 /* Pods_Slick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A68D95D160CB4689A26B519 /* Pods_Slick.framework */; };
 		EAB8DF9920EE80F800536EED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8DF9820EE80F800536EED /* AppDelegate.swift */; };
 		EAB8DF9B20EE80F800536EED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8DF9A20EE80F800536EED /* ViewController.swift */; };
 		EAB8DF9E20EE80F800536EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB8DF9C20EE80F800536EED /* Main.storyboard */; };
 		EAB8DFA020EE80F800536EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB8DF9F20EE80F800536EED /* Assets.xcassets */; };
 		EAB8DFA320EE80F800536EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB8DFA120EE80F800536EED /* LaunchScreen.storyboard */; };
+		EAB8DFAE20EE8FA800536EED /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB8DFAC20EE8FA800536EED /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A68D95D160CB4689A26B519 /* Pods_Slick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Slick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0CAF165C49AB248D56E06C /* Pods-Slick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slick.release.xcconfig"; path = "Pods/Target Support Files/Pods-Slick/Pods-Slick.release.xcconfig"; sourceTree = "<group>"; };
+		B3C2B4E3BC110B3EA585AD0A /* Pods-Slick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Slick/Pods-Slick.debug.xcconfig"; sourceTree = "<group>"; };
 		EAB8DF9520EE80F800536EED /* Slick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB8DF9820EE80F800536EED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAB8DF9A20EE80F800536EED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		EAB8DF9F20EE80F800536EED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAB8DFA220EE80F800536EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAB8DFA420EE80F800536EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB8DFAB20EE8FA600536EED /* Slick-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Slick-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAB8DFAC20EE8FA800536EED /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		EAB8DFAD20EE8FA800536EED /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD8A92C89F620B01A3BA275 /* Pods_Slick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45CE761B4020D6EF9AEDDC73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2B4E3BC110B3EA585AD0A /* Pods-Slick.debug.xcconfig */,
+				5E0CAF165C49AB248D56E06C /* Pods-Slick.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EAB8DF8C20EE80F800536EED = {
 			isa = PBXGroup;
 			children = (
+				EAB8DFAA20EE8F9500536EED /* SupportingFiles */,
 				EAB8DF9720EE80F800536EED /* Slick */,
 				EAB8DF9620EE80F800536EED /* Products */,
+				45CE761B4020D6EF9AEDDC73 /* Pods */,
+				F8A970CEB970958A7D81976E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +85,24 @@
 			path = Slick;
 			sourceTree = "<group>";
 		};
+		EAB8DFAA20EE8F9500536EED /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EAB8DFAD20EE8FA800536EED /* SWRevealViewController.h */,
+				EAB8DFAC20EE8FA800536EED /* SWRevealViewController.m */,
+				EAB8DFAB20EE8FA600536EED /* Slick-Bridging-Header.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F8A970CEB970958A7D81976E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A68D95D160CB4689A26B519 /* Pods_Slick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAB8DFA720EE80F800536EED /* Build configuration list for PBXNativeTarget "Slick" */;
 			buildPhases = (
+				193908482241287A2BD80304 /* [CP] Check Pods Manifest.lock */,
 				EAB8DF9120EE80F800536EED /* Sources */,
 				EAB8DF9220EE80F800536EED /* Frameworks */,
 				EAB8DF9320EE80F800536EED /* Resources */,
+				44EB8710490EC53343958046 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					EAB8DF9420EE80F800536EED = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +173,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		193908482241287A2BD80304 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Slick-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44EB8710490EC53343958046 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Slick/Pods-Slick-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Slick/Pods-Slick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EAB8DF9120EE80F800536EED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +225,7 @@
 			files = (
 				EAB8DF9B20EE80F800536EED /* ViewController.swift in Sources */,
 				EAB8DF9920EE80F800536EED /* AppDelegate.swift in Sources */,
+				EAB8DFAE20EE8FA800536EED /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +360,18 @@
 		};
 		EAB8DFA820EE80F800536EED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3C2B4E3BC110B3EA585AD0A /* Pods-Slick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z3RLZ7897;
 				INFOPLIST_FILE = Slick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuhiro.Slick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SupportingFiles/Slick-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +379,17 @@
 		};
 		EAB8DFA920EE80F800536EED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0CAF165C49AB248D56E06C /* Pods-Slick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z3RLZ7897;
 				INFOPLIST_FILE = Slick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuhiro.Slick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SupportingFiles/Slick-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
